@@ -49,8 +49,8 @@ body:
     id: version
     attributes:
       label: AI-DLC Version
-      description: Which version of AI-DLC are you using?
-      placeholder: e.g., 0.1.5
+      description: Which version of AI-DLC are you using? Or the git commit hash if running from source.
+      placeholder: e.g., 0.1.5 or abc1234
     validations:
       required: true
 
@@ -74,7 +74,8 @@ body:
       description: Which platform or IDE are you using AI-DLC with?
       multiple: true
       options:
-        - Kiro
+        - Kiro IDE
+        - Kiro CLI
         - Amazon Q Developer IDE Plugin
         - Cursor IDE
         - Cline
